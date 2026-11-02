@@ -26,7 +26,7 @@ public class JwtService {
     }
 
     public String generateToken(Usuario usuario) {
-        Date now = new Date();
+        Date now = new Date();//FIXME MEJORAR ESTA PARTE
         Date expiryDate = new Date(now.getTime() + expiration);
 
         return Jwts.builder()
