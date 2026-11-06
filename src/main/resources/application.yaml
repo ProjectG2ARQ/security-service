@@ -10,3 +10,8 @@ spring:
   cloud:
     compatibility-verifier:
       enabled: false
+
+  sql:
+    init:
+      mode: always
+      data-locations: classpath:data.sql
